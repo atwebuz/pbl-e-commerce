@@ -15,33 +15,25 @@
                             <!-- Start Header Top Menu -->
                             <ul class="header-user-menu">
                                 <li class="has-user-dropdown">
-                                    <a href="#">Setting</a>
-                                    <!-- Header Top Menu's Dropdown -->
-                                    <ul class="user-sub-menu">
-                                        <li><a href="#">Checkout</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Shopping Cart</a></li>
-                                        <li><a href="#">Wishlist</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-user-dropdown">
-                                    <a href="#">$ USD</a>
-                                    <!-- Header Top Menu's Dropdown -->
-                                    <ul class="user-sub-menu">
-                                        <li><a href="#">EUR – Euro</a></li>
-                                        <li><a href="#">GBP – British Pound</a></li>
-                                        <li><a href="#">INR – India Rupee</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-user-dropdown">
                                     <a href="#">English</a>
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
-                                        <li><a href="#"><img class="user-sub-menu-in-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
-                                        <li><a href="#"><img class="user-sub-menu-in-icon" src="assets/images/icon/lang-gr.png" alt=""> Germany</a></li>
+                                        <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
+                                        <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
+                                        <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="compare.html"><i class="icon-repeat"></i> Compare (0)</a></li>
+                                <li class="has-user-dropdown">
+                                    <a href="#">Setting</a>
+                                    <!-- Header Top Menu's Dropdown -->
+                                    <ul class="user-sub-menu">
+                                        <li><a href="/checkout">Checkout</a></li>
+                                        <li><a href="/my-account">My Account</a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                    </ul>
+                                </li>
+                              
                             </ul> <!-- End Header Top Menu -->
                         </div>
                     </div>
@@ -101,98 +93,22 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="/">Home <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="/">Home 1</a></li>
-                                            <li><a href="index-2.html">Home 2</a></li>
-                                        </ul>
+                                        <a class="active main-menu-link" href="/">Home</a>
+                                      
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="product-details-default.html">Shop <i class="fa fa-angle-down"></i></a>
-                                        <!-- Mega Menu -->
-                                        <div class="mega-menu">
-                                            <ul class="mega-menu-inner">
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Shop Layouts</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="shop-grid-sidebar-left.html">Grid Left Sidebar</a></li>
-                                                        <li><a href="shop-grid-sidebar-right.html">Grid Right Sidebar</a></li>
-                                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                                        <li><a href="shop-list-sidebar-left.html">List Left Sidebar</a></li>
-                                                        <li><a href="shop-list-sidebar-right.html">List Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Other Pages</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="cart.html">Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="compare.html">Compare</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
-                                                        <li><a href="login.html">Login</a></li>
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="product-details-default.html">Product Default</a></li>
-                                                        <li><a href="product-details-variable.html">Product Variable</a></li>
-                                                        <li><a href="product-details-affiliate.html">Product Referral</a></li>
-                                                        <li><a href="product-details-group.html">Product Group</a></li>
-                                                        <li><a href="product-details-single-slide.html">Product Slider</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="product-details-tab-left.html">Product Tab Left</a></li>
-                                                        <li><a href="product-details-tab-right.html">Product Tab Right</a></li>
-                                                        <li><a href="product-details-gallery-left.html">Product Gallery Left</a></li>
-                                                        <li><a href="product-details-gallery-right.html">Product Gallery Right</a></li>
-                                                        <li><a href="product-details-sticky-left.html">Product Sticky Left</a></li>
-                                                        <li><a href="product-details-sticky-right.html">Product Sticky right</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <div class="menu-banner">
-                                                <a href="#" class="menu-banner-link">
-                                                    <img class="menu-banner-img" src="assets/images/banner/menu-banner.jpg" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <a href="/products">Shop</a>
+                                    
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="blog-single-sidebar-left.html">Blog <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-grid-sidebar-left.html">Blog Grid Sidebar left</a></li>
-                                            <li><a href="blog-grid-sidebar-right.html">Blog Grid Sidebar Right</a></li>
-                                            <li><a href="blog-full-width.html">Blog Full Width</a></li>
-                                            <li><a href="blog-single-sidebar-left.html">Blog Single Sidebar left</a></li>
-                                            <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="faq.html">Frequently Questions</a></li>
-                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul>
+                                        <a href="/blog">Blog</a>
+                                      
                                     </li>
                                     <li>
-                                        <a href="about-us.html">About Us</a>
+                                        <a href="/about">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html">Contact Us</a>
+                                        <a href="/contact">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -241,35 +157,27 @@
                 <span>Welcome to our store!</span>
                 <!-- Start Header Top Menu -->
                 <ul class="mobile-menu-user-menu">
-                    <li><a class="header-user-menu-link" href="#"><i class="icon-repeat"></i>Compare (0)</a></li>
-                    <li class="has-mobile-user-dropdown">
-                        <a class="mobile-user-menu-link" href="#">Setting</a>
-                        <!-- Header Top Menu's Dropdown -->
-                        <ul class="mobile-user-sub-menu">
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                        </ul>
-                    </li>
-                    <li class=" has-mobile-user-dropdown">
-                        <a class="mobile-user-menu-link" href="#">$ USD</a>
-                        <!-- Header Top Menu's Dropdown -->
-                        <ul class="mobile-user-sub-menu">
-                            <li><a href="#">EUR – Euro</a></li>
-                            <li><a href="#">GBP – British Pound</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">INR – India Rupee</a></li>
-                        </ul>
-                    </li>
+                      
                     <li class="has-mobile-user-dropdown">
                         <a class="mobile-user-menu-link" href="#">English</a>
                         <!-- Header Top Menu's Dropdown -->
                         <ul class="mobile-user-sub-menu">
                             <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
-                            <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-gr.png" alt=""> Germany</a></li>
+                            <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russina</a></li>
+                            <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
                         </ul>
                     </li>
+                    <li class="has-mobile-user-dropdown">
+                        <a class="mobile-user-menu-link" href="#">Setting</a>
+                        <!-- Header Top Menu's Dropdown -->
+                        <ul class="mobile-user-sub-menu">
+                            <li><a href="/checkout">Checkout</a></li>
+                            <li><a href="/my-account">My Account</a></li>
+                            <li><a href="/cart">Shopping Cart</a></li>
+                            <li><a href="/wishlist">Wishlist</a></li>
+                        </ul>
+                    </li>
+               
                 </ul> <!-- End Header Top Menu -->
             </div> <!-- End Mobile Menu User Top -->
             <!-- Start Mobile Menu User Center -->
@@ -311,92 +219,44 @@
                 <div class="offcanvas-menu">
                     <ul>
                         <li>
-                            <a href="#"><span>Home</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="/">Home 1</a></li>
-                                <li><a href="index-2.html">Home 2</a></li>
-                            </ul>
+                            <a href="/"><span>Home</span></a>
+                           
                         </li>
                         <li>
                             <a href="#"><span>Shop</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Layout</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="shop-grid-sidebar-left.html">Grid Left Sidebar</a></li>
-                                        <li><a href="shop-grid-sidebar-right.html">Grid Right Sidebar</a></li>
-                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                        <li><a href="shop-list-sidebar-left.html">List Left Sidebar</a></li>
-                                        <li><a href="shop-list-sidebar-right.html">List Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        
                             <ul class="mobile-sub-menu">
                                 <li>
                                     <a href="#">Shop Pages</a>
                                     <ul class="mobile-sub-menu">
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="compare.html">Compare</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="my-account.html">My Account</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
+                                        <li><a href="/cart">Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        <li><a href="/checkout">Checkout</a></li>
+                                        <li><a href="/login.html">Login</a></li>
+                                        <li><a href="/my-account">My Account</a></li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul class="mobile-sub-menu">
                                 <li>
-                                    <a href="#">Product Single</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="product-details-default.html">Product Default</a></li>
-                                        <li><a href="product-details-variable.html">Product Variable</a></li>
-                                        <li><a href="product-details-affiliate.html">Product Referral</a></li>
-                                        <li><a href="product-details-group.html">Product Group</a></li>
-                                        <li><a href="product-details-single-slide.html">Product Slider</a></li>
-                                        <li><a href="product-details-tab-left.html">Product Tab Left</a></li>
-                                        <li><a href="product-details-tab-right.html">Product Tab Right</a></li>
-                                        <li><a href="product-details-gallery-left.html">Product Gallery Left</a></li>
-                                        <li><a href="product-details-gallery-right.html">Product Gallery Right</a></li>
-                                        <li><a href="product-details-sticky-left.html">Product Sticky Left</a></li>
-                                        <li><a href="product-details-sticky-right.html">Product Sticky right</a></li>
-                                    </ul>
+                                    <a href="/products">Products</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><span>Blogs</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Blog Grid</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="blog-grid-sidebar-left.html">Blog Grid Sidebar left</a></li>
-                                        <li><a href="blog-grid-sidebar-right.html">Blog Grid Sidebar Right</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="blog-full-width.html">Blog Full Width</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog Single</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="blog-single-sidebar-left.html">Blog Single Sidebar left</a></li>
-                                        <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a href="/blog"><span>Blogs</span></a>
+                        
                         </li>
                         <li>
                             <a href="#"><span>Pages</span></a>
                             <ul class="mobile-sub-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="faq.html">Frequently Questions</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="404.html">404 Page</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/service">Service</a></li>
+                                <li><a href="/faq">Frequently Questions</a></li>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div> <!-- End Mobile Menu Nav -->
 

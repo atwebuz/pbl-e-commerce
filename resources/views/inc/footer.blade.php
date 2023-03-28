@@ -46,16 +46,14 @@
                         <h3 class="footer-widget-title">Information</h3>
                         <div class="footer-menu">
                             <ul class="footer-menu-nav">
-                                <li><a href="#">Delivery</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact us</a></li>
-                                <li><a href="#">Stores</a></li>
+                                <li><a href="/service">Service</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/contact">Contact us</a></li>
                             </ul>
                             <ul class="footer-menu-nav">
-                                <li><a href="#">Legal Notice</a></li>
-                                <li><a href="#">Secure payment</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
+                                <li><a href="/faq">Faq</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/privasy-polisy">Privasy-polisy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +67,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-area">
-                        <p class="copyright-area-text">Copyright &copy; 2022 <a class="copyright-link" href="https://hasthemes.com/">Hasthemes</a></p>
+                        <p class="copyright-area-text">Copyright &copy; 2023 <a class="copyright-link" href="#!">By devs</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
