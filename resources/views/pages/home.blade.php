@@ -6,7 +6,8 @@
         <!-- Start Hero Slider Single -->
         <div class="hero-area-single">
             <div class="hero-area-bg">
-                <img class="hero-img" src="{{asset('assets/images/slider_images/home_1/aments_home_1_slider_1.jpg')}}" alt="">
+                <img style="filter: blur(4px); -webkit-filter:blur(4px);" class="hero-img" src="{{asset('assets/images/slider_images/home_1/malibu.webp')}}" alt="">
+                {{-- <img class="hero-img" src="{{asset('assets/images/slider_images/home_1/aments_home_1_slider_1.jpg')}}" alt=""> --}}
             </div>
             <div class="hero-content">
                 <div class="container">

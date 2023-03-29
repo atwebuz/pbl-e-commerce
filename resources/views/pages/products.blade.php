@@ -187,8 +187,8 @@
                                 <!-- Start Sort tab Button -->
                                 <div class="sort-tablist">
                                     <ul class="tablist nav sort-tab-btn">
-                                        <li><a class="nav-link" data-bs-toggle="tab" href="#layout-3-grid"><img src="assets/images/icon/bkg_grid.png" alt=""></a></li>
-                                        <li><a class="nav-link active" data-bs-toggle="tab" href="#layout-list"><img src="assets/images/icon/bkg_list.png" alt=""></a></li>
+                                        <li><a class="nav-link active" data-bs-toggle="tab" href="#layout-3-grid"><img src="assets/images/icon/bkg_grid.png" alt=""></a></li>
+                                        <li><a class="nav-link " data-bs-toggle="tab" href="#layout-list"><img src="assets/images/icon/bkg_list.png" alt=""></a></li>
                                     </ul>
                                 </div> <!-- End Sort tab Button -->
 
@@ -225,7 +225,7 @@
                             <div class="col-12">
                                 <div class="tab-content tab-animate-zoom">
                                     <!-- Start Grid View Product -->
-                                    <div class="tab-pane sort-layout-single" id="layout-3-grid">
+                                    <div class="tab-pane active sort-layout-single" id="layout-3-grid">
                                         <div class="row">
                                             <div class="col-xl-4 col-sm-6 col-12">
                                                 <!-- Start Product Defautlt Single -->
@@ -428,7 +428,7 @@
                                         </div>
                                     </div> <!-- End Grid View Product -->
                                     <!-- Start List View Product -->
-                                    <div class="tab-pane active show sort-layout-single" id="layout-list">
+                                    <div class="tab-pane show sort-layout-single" id="layout-list">
                                         <div class="row">
                                             <div class="col-12">
                                                 <!-- Start Product Defautlt Single -->
