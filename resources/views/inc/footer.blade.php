@@ -107,8 +107,8 @@
                                 <div class="col-md-8">
                                     <div class="modal-add-cart-info"><i class="fa fa-check-square"></i>Added to cart successfully!</div>
                                     <div class="modal-add-cart-product-cart-buttons">
-                                        <a href="cart.html">View Cart</a>
-                                        <a href="checkout.html">Checkout</a>
+                                        <a href="/cart">View Cart</a>
+                                        <a href="/checkout">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -236,9 +236,8 @@
                                 <!-- Start  Product Details Meta Area-->
                                 <div class="product-details-meta mb-20">
                                     <ul>
-                                        <li><a href="#"><i class="icon-heart"></i>Add to wishlist</a></li>
-                                        <li><a href="#"><i class="icon-repeat"></i>Compare</a></li>
-                                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-shopping-cart"></i>Add To Cart</a></li>
+                                        <li><a href="/wishlist"><i class="icon-heart"></i>Add to wishlist</a></li>
+                                        <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-shopping-cart"></i>Add To Cart</a></li>
                                     </ul>
                                 </div> <!-- End  Product Details Meta Area-->
                                 <!-- Start  Product Details Social Area-->

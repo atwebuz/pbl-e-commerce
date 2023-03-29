@@ -215,7 +215,7 @@
                         <div class="comment-form" data-aos="fade-up"  data-aos-delay="0">
                             <div class="coment-form-text-top mt-30">
                                 <h4>Leave a Reply</h4>
-                                <p>Your email address will not be published. Required fields are marked *</p>
+                                <p style="color: red">Your email address will not be published. Required fields are marked *</p>
                             </div>
 
                             <form action="#" method="post">

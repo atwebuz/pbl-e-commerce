@@ -35,6 +35,8 @@ Route::get('/cart', function () {
     return view('pages.cart');
 });
 
+
+
 Route::get('/wishlist', function () {
     return view('pages.wishlist');
 });
@@ -58,4 +60,9 @@ Route::get('/404', function () {
 
 Route::get('/products', function () {
     return view('pages.products');
+});
+
+
+Route::get('/product', function () {
+    return view('pages.product');
 });

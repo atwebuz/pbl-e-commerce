@@ -1,0 +1,11 @@
+:root {
+    --blue: #002f34;
+    --light-blue: #002f34d1;
+    --white: #ffffff;
+}
+
+.product-catagory-img img{
+    width: 90px;
+    height: 60px;
+    
+}

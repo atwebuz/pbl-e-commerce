@@ -19,8 +19,8 @@
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
                                         <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
-                                        <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
                                         <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
+                                        <li><a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">
@@ -200,13 +200,13 @@
                 <!-- Start Header Action Icon -->
                 <ul class="mobile-action-icon">
                     <li class="mobile-action-icon-item">
-                        <a href="wishlist.html" class="mobile-action-icon-link">
+                        <a href="/wishlist" class="mobile-action-icon-link">
                             <i class="icon-heart"></i>
                             <span class="mobile-action-icon-item-count">3</span>
                         </a>
                     </li>
                     <li class="mobile-action-icon-item">
-                        <a href="cart.html" class="mobile-action-icon-link">
+                        <a href="/cart" class="mobile-action-icon-link">
                             <i class="icon-shopping-cart"></i>
                             <span class="mobile-action-icon-item-count">3</span>
                         </a>
@@ -343,7 +343,7 @@
                 <span class="offcanvas-cart-total-price-value">$170.00</span>
             </div>
             <ul class="offcanvas-cart-action-button">
-                <li class="offcanvas-cart-action-button-list"><a href="cart.html" class="offcanvas-cart-action-button-link">View Cart</a></li>
+                <li class="offcanvas-cart-action-button-list"><a href="/cart" class="offcanvas-cart-action-button-link">View Cart</a></li>
                 <li class="offcanvas-cart-action-button-list"><a href="checkout.html" class="offcanvas-cart-action-button-link">Checkout</a></li>
             </ul>
         </div> <!-- End  Offcanvas Addcart Wrapper -->
@@ -414,7 +414,7 @@
                 </li>
             </ul>
             <ul class="offcanvas-wishlist-action-button">
-                <li class="offcanvas-wishlist-action-button-list"><a href="wishlist.html" class="offcanvas-wishlist-action-button-link">View wishlist</a></li>
+                <li class="offcanvas-wishlist-action-button-list"><a href="/wishlist" class="offcanvas-wishlist-action-button-link">View wishlist</a></li>
             </ul>
         </div> <!-- End Offcanvas Mobile Menu Wrapper -->
 

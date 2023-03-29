@@ -48,8 +48,8 @@
                                             <!-- Start Cart Single Item-->
                                             <tr>
                                                 <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_1.jpg" alt=""></a></td>
-                                                <td class="product_name"><a href="product-details-default.html">Handbag fringilla</a></td>
+                                                <td class="product_thumb"><a href="/product"><img src="assets/images/products_images/aments_products_image_1.jpg" alt=""></a></td>
+                                                <td class="product_name"><a href="/product">Handbag fringilla</a></td>
                                                 <td class="product-price">$65.00</td>
                                                 <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number"></td>
                                                 <td class="product_total">$130.00</td>
@@ -57,8 +57,8 @@
                                             <!-- Start Cart Single Item-->
                                             <tr>
                                                 <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_2.jpg" alt=""></a></td>
-                                                <td class="product_name"><a href="product-details-default.html">Handbags justo</a></td>
+                                                <td class="product_thumb"><a href="/product"><img src="assets/images/products_images/aments_products_image_2.jpg" alt=""></a></td>
+                                                <td class="product_name"><a href="/product">Handbags justo</a></td>
                                                 <td class="product-price">$90.00</td>
                                                 <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number"></td>
                                                 <td class="product_total">$180.00</td>
@@ -66,8 +66,8 @@
                                             <!-- Start Cart Single Item-->
                                             <tr>
                                                 <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_3.jpg" alt=""></a></td>
-                                                <td class="product_name"><a href="product-details-default.html">Handbag elit</a></td>
+                                                <td class="product_thumb"><a href="/product"><img src="assets/images/products_images/aments_products_image_3.jpg" alt=""></a></td>
+                                                <td class="product_name"><a href="/product">Handbag elit</a></td>
                                                 <td class="product-price">$80.00</td>
                                                 <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number"></td>
                                                 <td class="product_total">$160.00</td>

@@ -2,8 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from htmldemo.net/aments/aments// by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Mar 2023 00:25:28 GMT -->
-<head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aments - Car Accessories Shop HTML Template</title>
@@ -31,6 +30,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/vendor/vendor.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/plugins/plugins.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/root.css')}}">
 
 
 
@@ -91,5 +91,4 @@
 </body>
 
 
-<!-- Mirrored from htmldemo.net/aments/aments// by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Mar 2023 00:26:44 GMT -->
 </html>
