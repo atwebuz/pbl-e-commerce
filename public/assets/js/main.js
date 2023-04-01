@@ -394,3 +394,8 @@
 
 
 })(jQuery);
+
+// heart icon class
+$( ".switch" ).click(function() {  
+    $( this ).toggleClass( "highlight" );  
+});  

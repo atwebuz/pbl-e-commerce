@@ -238,8 +238,8 @@
                                                             </a>
                                                             <div class="product-action-icon-link">
                                                                 <ul>
-                                                                    <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                                                                    <li><a href="/products/" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
+                                                                    <li><a href="#" class="switch"><i class="icon-heart" ></i></a></li>
+                                                                                    <li><a href="/products/{{$product->id}}" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
                                                                     <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
                                                                 </ul>
                                                             </div>
@@ -258,12 +258,13 @@
                                     <!-- Start List View Product -->
                                     <div class="tab-pane show sort-layout-single" id="layout-list">
                                         <div class="row">
+                                            
                                             @foreach ($products as $product)
                                                  <div class="col-12">
                                                 <!-- Start Product Defautlt Single -->
                                                 <div class="product-list-single border-around">
                                                     <a href="/product" class="product-list-img-link">
-                                                        <img src="{{asset('assets/images/no-image.jpg')}}" alt="" class="img-fluid">
+                                                        <img src="{{asset('assets/images/no-image.jpg')}}" alt="{{$product->name}}" class="img-fluid">
                                                     </a>
                                                     <div class="product-list-content">
                                                         <h5 class="product-list-link"><a href="/products/{{$product->id}}">{{$product->name}}</a></h5>
@@ -273,7 +274,7 @@
                                                         </p>
                                                         <div class="product-action-icon-link-list">
                                                             <ul>
-                                                                <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
+                                                                <li><a href="#" class="switch"><i class="icon-heart"></i></a></li>
                                                                                  <li><a href="/product" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
                                                                 <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
                                                             </ul>

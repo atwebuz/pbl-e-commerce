@@ -101,7 +101,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="modal-add-cart-product-img">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_1.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -145,42 +145,42 @@
                             <div class="product-details-gallery-area">
                                 <div class="product-large-image modal-product-image-large">
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_1.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_2.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_3.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_4.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_5.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-large-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_6.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="product-image-thumb modal-product-image-thumb">
                                     <div class="zoom-active product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_1.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_2.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_3.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_4.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_5.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                     <div class="product-image-thumb-single">
-                                        <img class="img-fluid" src="{{asset('assets/images/products_images/aments_products_image_6.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                                     </div>
                                 </div>
                             </div>
