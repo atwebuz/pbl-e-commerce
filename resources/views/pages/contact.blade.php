@@ -6,12 +6,12 @@
         <div class="breadcrumb-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-between justify-content-md-between  align-items-center flex-md-row flex-column">
+                    <div class="col-12 d-flex justify-content-between justify-content-md-between align-items-center flex-md-row flex-column">
                         <h3 class="breadcrumb-title">Contact Us</h3>
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li class="active" aria-current="page">Contact Us</li>
                                 </ul>
                             </nav>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <!-- Start Contact Details -->
-                    <div class="contact-details-wrapper section-top-gap-100" data-aos="fade-up"  data-aos-delay="0">
+                    <div class="contact-details-wrapper">
                         <div class="contact-details">
                             <!-- Start Contact Details Single Item -->
                             <div class="contact-details-single-item">
@@ -75,7 +75,7 @@
                     </div> <!-- End Contact Details -->
                 </div>
                 <div class="col-lg-8">
-                    <div class="contact-form section-top-gap-100" data-aos="fade-up"  data-aos-delay="200">
+                    <div class="contact-form">
                         <h3>Get In Touch</h3>
                         <form id="contact-form" action="https://whizthemes.com/mail-php/jaber/contact.php" method="POST">
                             <div class="row">

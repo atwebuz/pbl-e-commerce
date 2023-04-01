@@ -28,7 +28,7 @@
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
                                         <li><a href="/checkout">Checkout</a></li>
-                                        <li><a href="/my-account">My Account</a></li>
+                                        <li><a href="/profile">My Account</a></li>
                                         <li><a href="/cart">Shopping Cart</a></li>
                                         <li><a href="/wishlist">Wishlist</a></li>
                                     </ul>
@@ -172,7 +172,7 @@
                         <!-- Header Top Menu's Dropdown -->
                         <ul class="mobile-user-sub-menu">
                             <li><a href="/checkout">Checkout</a></li>
-                            <li><a href="/my-account">My Account</a></li>
+                            <li><a href="/profile">My Account</a></li>
                             <li><a href="/cart">Shopping Cart</a></li>
                             <li><a href="/wishlist">Wishlist</a></li>
                         </ul>
@@ -232,8 +232,8 @@
                                         <li><a href="/cart">Cart</a></li>
                                         <li><a href="/wishlist">Wishlist</a></li>
                                         <li><a href="/checkout">Checkout</a></li>
-                                        <li><a href="/login.html">Login</a></li>
-                                        <li><a href="/my-account">My Account</a></li>
+                                        <li><a href="//">Login</a></li>
+                                        <li><a href="/profile">My Account</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -344,7 +344,7 @@
             </div>
             <ul class="offcanvas-cart-action-button">
                 <li class="offcanvas-cart-action-button-list"><a href="/cart" class="offcanvas-cart-action-button-link">View Cart</a></li>
-                <li class="offcanvas-cart-action-button-list"><a href="checkout.html" class="offcanvas-cart-action-button-link">Checkout</a></li>
+                <li class="offcanvas-cart-action-button-list"><a href="/checkout" class="offcanvas-cart-action-button-link">Checkout</a></li>
             </ul>
         </div> <!-- End  Offcanvas Addcart Wrapper -->
 

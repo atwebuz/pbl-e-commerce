@@ -11,7 +11,7 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="blog-grid-sidebar-left.html">Blog</a></li>
                                     <li class="active" aria-current="page">Blog Single Sidebar Left</li>
                                 </ul>

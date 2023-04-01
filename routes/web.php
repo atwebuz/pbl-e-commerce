@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,13 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+Route::get('/registration', function () {
+    return view('pages.register');
+});
+
+Route::get('/login', function () {
+    return view('pages.login');
+});
 
 
 Route::get('/about', function () {
@@ -41,6 +49,10 @@ Route::get('/wishlist', function () {
     return view('pages.wishlist');
 });
 
+Route::get('/profile', function () {
+    return view('pages.profile');
+});
+
 Route::get('/checkout', function () {
     return view('pages.checkout');
 });
@@ -63,6 +75,20 @@ Route::get('/products', function () {
 });
 
 
-Route::get('/product', function () {
-    return view('pages.product');
+Route::get('/products', function () {
+
+    return view('pages.products', [
+        'products' => Product::paginate(12)
+    ]);
+});
+// $collection = $products->getCollection();
+// $count = $collection->count();
+
+Route::get('/products/{product}', function (Product $product) {
+
+  
+        return view('pages.product', [
+            'product' => $product
+        ]);
+ 
 });

@@ -11,7 +11,7 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li class="active" aria-current="page">404</li>
                                 </ul>
                             </nav>
@@ -36,7 +36,7 @@
                                 <input class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Search entire store here ..." required>
                                 <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
                             </div>
-                            <a href="index.html" data-aos="fade-up"  data-aos-delay="800">Back to home page</a>
+                            <a href="/" data-aos="fade-up"  data-aos-delay="800">Back to home page</a>
                         </div>
                     </div>
                 </div>

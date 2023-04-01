@@ -11,7 +11,7 @@
                             <div class="breadcrumb-nav">
                                 <nav aria-label="breadcrumb">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="/">Home</a></li>
                                         <li><a href="shop-grid-sidebar-left.html">Shop</a></li>
                                         <li class="active" aria-current="page">My Account</li>
                                     </ul>
@@ -36,7 +36,7 @@
                                 <li><a href="#downloads" data-bs-toggle="tab" class="nav-link">Downloads</a></li>
                                 <li><a href="#address" data-bs-toggle="tab" class="nav-link">Addresses</a></li>
                                 <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a></li>
-                                <li><a href="login.html" class="nav-link">logout</a></li>
+                                <li><a href="/" class="nav-link">logout</a></li>
                             </ul>
                         </div>
                     </div>

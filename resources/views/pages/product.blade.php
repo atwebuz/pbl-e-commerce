@@ -11,51 +11,51 @@
                     <div class="product-details-gallery-area" data-aos="fade-up"  data-aos-delay="0">
                         <div class="product-large-image product-large-image-horaizontal">
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_1.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_2.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_3.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_4.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_5.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/products_images/aments_products_large_image_6.jpg" alt="">
+                                <img src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                         </div>
                         <div class="product-image-thumb product-image-thumb-horizontal pos-relative">
                             <div class="zoom-active product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_1.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_2.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_3.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_4.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_5.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                             <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/products_images/aments_products_image_6.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/no-image.jpg')}}" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="product-details-content-area" data-aos="fade-up"  data-aos-delay="200">
+                           <div class="product-details-content-area" data-aos="fade-up"  data-aos-delay="200">
                         <!-- Start  Product Details Text Area-->
                         <div class="product-details-text">
-                            <h4 class="title">Nonstick Dishwasher PFOA</h4>
+                            <h4 class="title">{{$product->title}}</h4>
                             <h6 class="product-ref mb-20">Reference By: <span>Jhon Doe</span></h6>
                             <div class="d-flex align-items-center">
                                 <div class="product-review">
@@ -67,49 +67,20 @@
                                 </div>
                                 <a href="#" class="customer-review">(customer review )</a>
                             </div>
-                            <div class="price"><del>$70.00</del>$80.00</div>
-                            <p>eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in</p>
+                            <div class="price"><del>{{$product->stock}}</del>{{$product->price}}</div>
+                            <p>{{$product->description}}</p>
                         </div> <!-- End  Product Details Text Area-->
                         <!-- Start Product Variable Area -->
                         <div class="product-details-variable">
                             <h4 class="title">Available Options</h4>
                             <!-- Product Variable Single Item -->
-                            <div class="variable-single-item">
-                                <span>Color</span>
-                                <div class="product-variable-color">
-                                    <label for="product-color-red">
-                                        <input name="product-color" id="product-color-red" class="color-select" type="radio" checked>
-                                        <span class="product-color-red"></span>
-                                    </label>
-                                    <label for="product-color-tomato">
-                                        <input name="product-color" id="product-color-tomato" class="color-select" type="radio" checked>
-                                        <span class="product-color-tomato"></span>
-                                    </label>
-                                    <label for="product-color-green">
-                                        <input name="product-color" id="product-color-green" class="color-select" type="radio">
-                                        <span class="product-color-green"></span>
-                                    </label>
-                                    <label for="product-color-light-green">
-                                        <input name="product-color" id="product-color-light-green" class="color-select" type="radio">
-                                        <span class="product-color-light-green"></span>
-                                    </label>
-                                    <label for="product-color-blue">
-                                        <input name="product-color" id="product-color-blue" class="color-select" type="radio">
-                                        <span class="product-color-blue"></span>
-                                    </label>
-                                    <label for="product-color-light-blue">
-                                        <input name="product-color" id="product-color-light-blue" class="color-select" type="radio">
-                                        <span class="product-color-light-blue"></span>
-                                    </label>
-                                </div>
-                            </div>
-
+                      
                             <!-- Product Variable Single Item -->
                             <div class="d-flex align-items-center">
                                 <div class="variable-single-item ">
                                     <span>Quantity</span>
                                     <div class="product-variable-quantity">
-                                        <input min="1" max="100" value="1" type="number">
+                                        <input min="1" max="100" value="{{$product->quantity}}" type="number">
                                     </div>
                                 </div>
 
@@ -119,23 +90,12 @@
                             </div>
 
                             <!-- Product Variable Single Item -->
-                            <div class="variable-single-item">
-                                <span>Size</span>
-                                <select class="product-variable-size">
-                                    <option selected value="1"> size in option</option>
-                                    <option value="2">s</option>
-                                    <option value="3">m</option>
-                                    <option value="4">l</option>
-                                    <option value="5">xl</option>
-                                    <option value="6">xxl</option>
-                                </select>
-                            </div>
+                          
                         </div> <!-- End Product Variable Area -->
                         <!-- Start  Product Details Meta Area-->
                         <div class="product-details-meta mb-20">
                             <ul>
                                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-heart"></i>Add to wishlist</a></li>
-                                <li><a href="#"><i class="icon-repeat"></i>Compare</a></li>
                             </ul>
                         </div> <!-- End  Product Details Meta Area-->
                         <!-- Start  Product Details Social Area-->
@@ -149,6 +109,8 @@
                             </ul>
                         </div> <!-- End  Product Details Social Area-->
                     </div>
+                  
+                 
                 </div>
             </div>
         </div>
@@ -214,7 +176,7 @@
                                             <li class="comment-list">
                                                 <div class="comment-wrapper">
                                                     <div class="comment-img">
-                                                        <img src="assets/images/user/image-1.png" alt="">
+                                                        <img src="{{asset('assets/images/user/image-1.png')}}" alt="">
                                                     </div>
                                                     <div class="comment-content">
                                                         <div class="comment-content-top">
@@ -243,7 +205,7 @@
                                                     <li class="comment-reply-list">
                                                         <div class="comment-wrapper">
                                                             <div class="comment-img">
-                                                                <img src="assets/images/user/image-2.png" alt="">
+                                                                <img src="{{asset('assets/images/user/image-2.png')}}" alt="">
                                                             </div>
                                                             <div class="comment-content">
                                                                 <div class="comment-content-top">
@@ -267,7 +229,7 @@
                                             <li class="comment-list">
                                                 <div class="comment-wrapper">
                                                     <div class="comment-img">
-                                                        <img src="assets/images/user/image-3.png" alt="">
+                                                        <img src="{{asset('assets/images/user/image-3.png')}}" alt="">
                                                     </div>
                                                     <div class="comment-content">
                                                         <div class="comment-content-top">
@@ -336,360 +298,6 @@
         </div>
     </div> <!-- End Product Content Tab Section -->
 
-    <!-- ...:::: Start Product  Section:::... -->
-    <div class="product-section section-top-gap-100">
-        <!-- Start Section Content -->
-        <div class="section-content-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="section-content">
-                        <h3 class="section-title" data-aos="fade-up"  data-aos-delay="0">Related Products</h3>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Section Content -->
 
-        <!-- Start Product Wrapper -->
-        <div class="product-wrapper" data-aos="fade-up"  data-aos-delay="200">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-default-slider product-default-slider-4grids-1row">
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_1.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_2.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_3.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_4.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_5.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_6.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_8.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_7.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Product Wrapper -->
-    </div> <!-- ...:::: End Product Section:::... -->
-
-    <!-- ...:::: Start Product Section:::... -->
-    <div class="product-section section-top-gap-100">
-        <!-- Start Section Content -->
-        <div class="section-content-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="section-content">
-                        <h3 class="section-title" data-aos="fade-up"  data-aos-delay="0">Upsell Products</h3>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Section Content -->
-
-        <!-- Start Product Wrapper -->
-        <div class="product-wrapper" data-aos="fade-up"  data-aos-delay="200">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-default-slider product-default-slider-4grids-1row">
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_1.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_2.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_3.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_4.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_5.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_6.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_8.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around">
-                                <div class="product-img-warp">
-                                    <a href="/product" class="product-default-img-link">
-                                        <img src="assets/images/products_images/aments_products_image_7.jpg" alt="" class="product-default-img img-fluid">
-                                    </a>
-                                    <div class="product-action-icon-link">
-                                        <ul>
-                                            <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
-                                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalQuickview"><i class="icon-eye"></i></a></li>
-                                            <li><a href="/cart" data-bs-toggle="modal" data-bs-target="#modalAddcart"><i class="icon-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-default-content">
-                                    <h6 class="product-default-link"><a href="/product">New Balance Fresh Foam Kaymin Car Purts</a></h6>
-                                    <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
-                                </div>
-                            </div> <!-- End Product Defautlt Single -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End product Wrapper -->
-    </div> <!-- ...:::: End Product Section:::... -->
-
+ 
 @endsection

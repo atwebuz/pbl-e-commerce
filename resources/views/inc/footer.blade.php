@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-5">
-                    <div class="footer-widget footer-widget-contact" data-aos="fade-up"  data-aos-delay="0">
+                    <div class="footer-widget footer-widget-contact" >
                         <div class="footer-logo">
                             <a href="/"><img src="{{asset('assets/images/logo/logo.png')}}" alt="" class="img-fluid"></a>
                         </div>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-7">
-                    <div class="footer-widget footer-widget-subscribe" data-aos="fade-up"  data-aos-delay="200">
+                    <div class="footer-widget footer-widget-subscribe">
                         <h3 class="footer-widget-title">Subscribe newsletter to get updated</h3>
                         <form action="#" method="post">
                             <div class="footer-subscribe-box default-search-style d-flex">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-widget footer-widget-menu" data-aos="fade-up"  data-aos-delay="600">
+                    <div class="footer-widget footer-widget-menu">
                         <h3 class="footer-widget-title">Information</h3>
                         <div class="footer-menu">
                             <ul class="footer-menu-nav">
