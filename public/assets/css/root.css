@@ -14,3 +14,48 @@
 .highlight {  
     color: red;  
  }  
+ 
+ /* image upload */
+
+ .center {
+    height:100%;
+    display:flex;
+    
+    justify-content:flex-start;
+  
+  }
+  .form-input {
+    width:350px;
+    padding:20px;
+    background:#fff;
+  }
+  .form-input input {
+    display:none;
+  
+  }
+  .form-input label {
+    display:block;
+    width:50%;
+    height:45px;
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    line-height:50px;
+    text-align:center;
+    background:var(--light-blue);
+  
+    color:#fff;
+    font-size:15px;
+    font-family:"Open Sans",sans-serif;
+    text-transform:Uppercase;
+    font-weight:600;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  
+  .form-input img {
+    width:100%;
+    display:none;
+    margin-bottom:30px;
+  }
+  

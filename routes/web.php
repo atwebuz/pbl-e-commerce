@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -75,20 +77,11 @@ Route::get('/products', function () {
 });
 
 
-Route::get('/products', function () {
+Route::get('/products',[ProductController::class, 'index']);
+Route::get('/products/create',[ProductController::class, 'create']);
 
-    return view('pages.products', [
-        'products' => Product::paginate(12)
-    ]);
-});
 // $collection = $products->getCollection();
 // $count = $collection->count();
 
-Route::get('/products/{product}', function (Product $product) {
-
-  
-        return view('pages.product', [
-            'product' => $product
-        ]);
- 
-});
+Route::get('/products/{product}',[ProductController::class, 'show']);
+// language

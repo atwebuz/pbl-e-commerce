@@ -24,7 +24,7 @@
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">
-                                    <a href="#">Setting</a>
+                                    <a href="#">Setting </a>
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
                                         <li><a href="/checkout">Checkout</a></li>
@@ -54,9 +54,9 @@
                     <div class="col-6">
                         <!-- Start Header Search -->
                         <div class="header-search">
-                            <form action="#" method="post">
+                            <form action="/">
                                 <div class="header-search-box default-search-style d-flex">
-                                    <input class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Search entire store here ..." required>
+                                    <input class="default-search-style-input-box border-around border-right-none" type="search" name="search" placeholder="Search entire store here ..." required>
                                     <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
                                 </div>
                             </form>
@@ -93,22 +93,26 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="/">Home</a>
+                                        <a class="active main-menu-link" href="/">{{ __('Home')}}</a>
                                       
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="/products">Shop</a>
+                                        <a href="/products">{{ __('Shop')}}</a>
                                     
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="/blog">Blog</a>
+                                        <a href="/blog">{{ __('Blog')}}</a>
                                       
                                     </li>
                                     <li>
-                                        <a href="/about">About Us</a>
+                                        <a href="/about">{{ __('About Us')}}</a>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <a href="/contact">{{ __('Contact Us')}}</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="btn btn-dark" href="/products/create">Create </a>
                                     </li>
                                 </ul>
                             </nav>

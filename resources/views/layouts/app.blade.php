@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/plugins/plugins.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/root.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/extra.css')}}">
 
 
 
