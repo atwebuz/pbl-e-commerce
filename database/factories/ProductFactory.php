@@ -14,14 +14,19 @@ class ProductFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+         //  name, description, price, discount, yearof, millage, transmission, color, oil, condition
+
     public function definition(): array
     {
         return [
-            'title' => $this->faker->title(),
             'name'=> $this->faker->name(),
-            'quantity'=> $this->faker->numberBetween(1, 100),
             'description' => $this->faker->paragraph(4),
             'price' => $this->faker->numberBetween(1000, 10000) / 100,
+            'discount' => $this->faker->boolean(),
+            'yearof' => $this->faker->date(),
+            'millage' => $this->faker->numberBetween(1, 100),
+            'quantity'=> $this->faker->numberBetween(1, 100),
             'stock' => $this->faker->numberBetween(10, 100),
         ];
     }

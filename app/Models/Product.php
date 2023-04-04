@@ -9,22 +9,36 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'name',
-        'description',
-        'image',
-        'images',
-        'price',
-        'stock',
+   
+    // protected $fillable = ['name', 
+    //                        'description',
+    //                        'price',
+    //                        'dagavornaya',
+    //                        'model',
+    //                        'kuzov',
+    //                        'prabeg',
+    //                        'karobka',
+    //                        'color',
+    //                        'oil',
+    //                        'xolati',
+    //                        'address',
+    //                        'user_name',
+    //                        'number'];
 
-    ];
+    public function scopeFilter($query, array $filters) {
+        if($filters['tag'] ?? false) {
+            $query->where('tags', 'like', '%' . request('tag') . '%');
+        }
 
-    public function scopeFilter($query, array $filters){
-        if($filters['search'] ?? false){
-            $query->where('title', 'like', '%' .request('search') . '%')
-            ->orWhere('name', 'like', '%' .request('search') . '%')
-            ->orWhere('description', 'like', '%' .request('search') . '%');
+        if($filters['search'] ?? false) {
+            $query->where('title', 'like', '%' . request('search') . '%')
+                ->orWhere('description', 'like', '%' . request('search') . '%')
+                ->orWhere('tags', 'like', '%' . request('search') . '%');
         }
     }
+
+    // Relationship To User
+    // public function user() {
+    //     return $this->belongsTo(User::class, 'user_id');
+    // }
 }

@@ -9,16 +9,21 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
+    //  name, description, price, discount, yearof, millage, transmission, color, oil, condition
+
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-             $table->string('title');
              $table->string('name');
              $table->text('description');
+             $table->decimal('price', 10, 2);
+             $table->boolean('discount')->default('false');
+             $table->date('yearof');
+             $table->float('millage');
              $table->string('image')->nullable();
              $table->string('images')->nullable();
-             $table->decimal('price', 10, 2);
              $table->integer('quantity')->default(0);
              $table->integer('stock')->unsigned()->default(0);      
              $table->timestamps();

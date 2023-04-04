@@ -55,7 +55,7 @@
                            <div class="product-details-content-area" data-aos="fade-up"  data-aos-delay="200">
                         <!-- Start  Product Details Text Area-->
                         <div class="product-details-text">
-                            <h4 class="title">{{$product->title}}</h4>
+                            <h4 class="title">{{$product->name}}</h4>
                             <h6 class="product-ref mb-20">Reference By: <span>Jhon Doe</span></h6>
                             <div class="d-flex align-items-center">
                                 <div class="product-review">
@@ -121,7 +121,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="product-details-content-tab-wrapper" data-aos="fade-up"  data-aos-delay="0">
+                    <div class="product-details-content-tab-wrapper">
 
                         <!-- Start Product Details Tab Button -->
                         <ul class="nav tablist product-details-content-tab-btn d-flex justify-content-center">

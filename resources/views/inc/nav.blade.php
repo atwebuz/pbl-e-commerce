@@ -97,7 +97,7 @@
                                       
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="/products">{{ __('Shop')}}</a>
+                                        <a href="{{route('products')}}">{{ __('Shop')}}</a>
                                     
                                     </li>
                                     <li class="has-dropdown">

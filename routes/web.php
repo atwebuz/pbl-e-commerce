@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| be assigned to the "webake something great!
 |
 */
 
@@ -76,12 +76,41 @@ Route::get('/products', function () {
     return view('pages.products');
 });
 
+//****************** */
+Route::get('/products', [ProductController::class, 'index'])->name('products');
 
-Route::get('/products',[ProductController::class, 'index']);
-Route::get('/products/create',[ProductController::class, 'create']);
+// Show Create Form
+Route::get('/products/create', [ProductController::class, 'create']);
 
-// $collection = $products->getCollection();
-// $count = $collection->count();
+// Store product Data
+Route::post('/products', [ProductController::class, 'store']);
 
-Route::get('/products/{product}',[ProductController::class, 'show']);
-// language
+// Show Edit Form
+Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
+
+// Update product
+Route::put('/products/{product}', [ProductController::class, 'update']);
+
+// Delete product
+Route::delete('/products/{product}', [ProductController::class, 'destroy']);
+
+// Manage products
+Route::get('/products/manage', [ProductController::class, 'manage']);
+
+// Single product
+Route::get('/products/{product}', [ProductController::class, 'show']);;
+
+// Show Register/Create Form
+// Route::get('/register', [UserController::class, 'create']);;
+
+// Create New User
+// Route::post('/users', [UserController::class, 'store']);;
+
+// Log User Out
+// Route::post('/logout', [UserController::class, 'logout']);
+
+// Show Login Form
+// Route::get('/login', [UserController::class, 'login'])->name('login');
+
+// Log In User
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);
