@@ -74,7 +74,15 @@
                         <div class="product-details-variable">
                             <h4 class="title">Available Options</h4>
                             <!-- Product Variable Single Item -->
-                      
+                            <ul class="my-3 d-flex justify-content-between">
+                                <li> <b>Oil: {{$product->oil}}</b></li>
+                                <li> <b>Color: {{$product->color}}</b></li>
+                                <li> <b>Condition: {{$product->condition}}</b></li>
+                                <li> <b>Body_type: {{$product->body_type}}</b></li>
+                                <li> <b>Transmission: {{$product->transmission}}</b></li>
+                            </ul>
+                        
+
                             <!-- Product Variable Single Item -->
                             <div class="d-flex align-items-center">
                                 <div class="variable-single-item ">

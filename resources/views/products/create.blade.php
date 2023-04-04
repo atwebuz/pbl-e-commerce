@@ -70,13 +70,20 @@
 
                <div class="mb-3 col-6">
                 <label for="">Body type**</label>
-                <select class="form-select " name="kuzov" aria-label="Default select example">
-                    <option selected>pikap</option>
-                    <option value="1">kupe</option>
-                    <option value="2">hetchbek</option>
-                    <option value="3">universal</option>
+                <select class="form-select " name="body_type" aria-label="Default select example">
+                    <option selected value="Sedan">Sedan</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Van">Van</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Wagon">Wagon</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Sports">Sports</option>
                   </select>
-                  @error('kuzov')
+
+
+                  @error('body_type')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                   @enderror    
                </div>
@@ -99,7 +106,7 @@
                <div class="mb-3 col-6">
                 <label for="">Transmission*</label>
                 <select class="form-select " name="karobka" aria-label="Default select example">
-                    <option selected value="Mecanic">Mecanic</option>
+                    <option selected value="Manual">Manual</option>
                     <option value="Automatic">Automatic</option>
                     <option value="Electirc">Electirc</option>
                     <option value="Other">Other</option>
@@ -133,9 +140,10 @@
                <div class="mb-3 col-6">
                 <label for="">Car condition</label>
                 <select class="form-select " name="xolati" aria-label="Default select example">
+                    <option selected value="Excellent">Excellent</option>
                     <option selected value="Good">Good</option>
-                    <option value="Normal" >Normal</option>
-                    <option value="Bad">Bad</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Poor">Poor</option>
                   </select>
                   @error('Condition')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>

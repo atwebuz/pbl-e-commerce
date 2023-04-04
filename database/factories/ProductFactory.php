@@ -25,9 +25,15 @@ class ProductFactory extends Factory
             'price' => $this->faker->numberBetween(1000, 10000) / 100,
             'discount' => $this->faker->boolean(),
             'yearof' => $this->faker->date(),
-            'millage' => $this->faker->numberBetween(1, 100),
+            'condition' => $this->faker->randomElement(['Excellent', 'Good', 'Normal', 'Poor']),
+            'transmission' => $this->faker->randomElement(['Manual', 'Automatic', 'Electic', 'Other']),
+            'color' => $this->faker->randomElement(['white', 'blue', 'black', 'gray']),
+            'oil' => $this->faker->randomElement(['gasoline', 'gas', 'methane', 'electron', 'diesel']),
+            'body_type' => $this->faker->randomElement(['Sedan','Coupe','Hatchback','SUV','Van','Convertible','Wagon','Truck','Sports']),
+            'millage' => $this->faker->numberBetween(0, 200000),
             'quantity'=> $this->faker->numberBetween(1, 100),
             'stock' => $this->faker->numberBetween(10, 100),
         ];
     }
 }
+

@@ -22,6 +22,11 @@ return new class extends Migration
              $table->boolean('discount')->default('false');
              $table->date('yearof');
              $table->float('millage');
+             $table->string('condition');
+             $table->string('color');
+             $table->string('oil');
+             $table->string('body_type');
+             $table->string('transmission');
              $table->string('image')->nullable();
              $table->string('images')->nullable();
              $table->integer('quantity')->default(0);
