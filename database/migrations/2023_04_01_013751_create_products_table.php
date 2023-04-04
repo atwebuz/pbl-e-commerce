@@ -15,6 +15,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
+            // $table->foreignId('brands_id')->constrained()->nullable();
             $table->id();
              $table->string('name');
              $table->text('description');
@@ -30,7 +31,11 @@ return new class extends Migration
              $table->string('image')->nullable();
              $table->string('images')->nullable();
              $table->integer('quantity')->default(0);
-             $table->integer('stock')->unsigned()->default(0);      
+             $table->integer('stock')->unsigned()->default(0); 
+             $table->unsignedBigInteger('brands_id')->nullable();
+             $table->foreign('brands_id')->references('id')->on('brands');
+             $table->unsignedBigInteger('category_id')->nullable();
+             $table->foreign('category_id')->references('id')->on('categories');  
              $table->timestamps();
         });
     }
