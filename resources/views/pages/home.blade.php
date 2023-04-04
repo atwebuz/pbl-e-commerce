@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="section-content">
-                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="50">Popular Categories</h3>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="50">{{__('Popular Categories')}}</h3>
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@
             <div class="row">
                 <div
                     class="section-content d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column">
-                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="0">New Arrivals</h3>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="0">{{ __('New Arrivals') }}</h3>
                     <ul class="tablist nav product-tab-btn" data-aos="fade-up" data-aos-delay="400">
                         <li><a class="nav-link active" data-bs-toggle="tab" href="#car_and_drive">Car & Drive </a></li>
                         <li><a class="nav-link" data-bs-toggle="tab" href="#motorcycle">Motorcycle</a></li>

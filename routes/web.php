@@ -114,3 +114,19 @@ Route::get('/products/{product}', [ProductController::class, 'show']);;
 
 // Log In User
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
+
+
+// localization
+Route::get('/{locale?}', function ($locale = null) {
+    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+        app()->setLocale($locale);
+    }
+    
+    return view('pages.home');
+});
+
+Route::get('language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+});
