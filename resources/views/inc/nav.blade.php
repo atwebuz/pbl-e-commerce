@@ -18,7 +18,7 @@
                                     <a href="#">English</a>
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
-                                        <li><a href="/language/ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
+                                        <li><a href="/language/en"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
                                         <li><a href="/language/ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
                                         <li><a href="/language/uz"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
                                     </ul>
@@ -93,7 +93,7 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="/">{{ __('Home')}}</a>
+                                        <a class="active main-menu-link" href="/">{{ __('Home')}}</a> 
                                       
                                     </li>
                                     <li class="has-dropdown has-megaitem">

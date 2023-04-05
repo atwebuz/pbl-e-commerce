@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\FallbackController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LangController;
 use App\Http\Controllers\ProductController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -117,16 +119,8 @@ Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 
 
 // localization
-Route::get('/{locale?}', function ($locale = null) {
-    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
-        app()->setLocale($locale);
-    }
-    
-    return view('pages.home');
-});
+Route::get('/{locale?}', [LangController::class, 'index']);
 
-Route::get('language/{locale}', function ($locale) {
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
-    return redirect()->back();
-});
+Route::get('language/{locale}', [LangController::class, 'show']);
+// not found 404 page
+Route::fallback(FallbackController::class);
