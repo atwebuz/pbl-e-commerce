@@ -30,7 +30,7 @@
         <div class="row flex-column-reverse flex-lg-row">
             <div class="col-lg-3">
                 <!-- Start Sidebar Area -->
-                <div class="siderbar-section" data-aos="fade-up"  data-aos-delay="0">
+                <div class="siderbar-section">
 
                     <!-- Start Single Sidebar Widget -->
                     <div class="sidebar-single-widget">
@@ -170,7 +170,7 @@
                     <div class="sidebar-single-widget">
                         <div class="sidebar-content">
                             <a href="#!" class="sidebar-banner">
-                                <img class="img-fluid" src="assets/images/banner_images/aments_banner_04.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('assets/images/banner_images/aments_banner_04.jpg')}}" alt="">
                             </a>
                         </div>
                     </div> <!-- End Single Sidebar Widget -->
@@ -179,7 +179,7 @@
             </div>
             <div class="col-lg-9">
                 <!-- Start Shop Product Sorting Section -->
-                <div class="shop-sort-section" data-aos="fade-up"  data-aos-delay="0">
+                <div class="shop-sort-section">
                     <div class="container">
                         <div class="row">
                             <!-- Start Sort Wrapper Box -->
@@ -187,8 +187,8 @@
                                 <!-- Start Sort tab Button -->
                                 <div class="sort-tablist">
                                     <ul class="tablist nav sort-tab-btn">
-                                        <li><a class="nav-link active" data-bs-toggle="tab" href="#layout-3-grid"><img src="assets/images/icon/bkg_grid.png" alt=""></a></li>
-                                        <li><a class="nav-link " data-bs-toggle="tab" href="#layout-list"><img src="assets/images/icon/bkg_list.png" alt=""></a></li>
+                                        <li><a class="nav-link active" data-bs-toggle="tab" href="#layout-3-grid"><img src="{{asset('assets/images/icon/bkg_grid.png')}}" alt=""></a></li>
+                                        <li><a class="nav-link " data-bs-toggle="tab" href="#layout-list"><img src="{{asset('assets/images/icon/bkg_list.png')}}" alt=""></a></li>
                                     </ul>
                                 </div> <!-- End Sort tab Button -->
 

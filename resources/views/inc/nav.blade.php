@@ -48,7 +48,7 @@
                     <div class="col-3">
                         <!-- Logo Header -->
                         <div class="header-logo">
-                            <a href="/"><img src="assets/images/logo/logo.png" alt=""></a>
+                            <a href="/"><img src="{{asset('assets/images/logo/logo.png')}}" style="width:100px" alt=""></a>
                         </div>
                     </div>
                     <div class="col-6">

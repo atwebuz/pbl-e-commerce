@@ -6,7 +6,8 @@
                 <div class="col-lg-3 col-md-3 col-sm-5">
                     <div class="footer-widget footer-widget-contact" >
                         <div class="footer-logo">
-                            <a href="/"><img src="{{asset('assets/images/logo/logo.png')}}" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="{{asset('assets/images/logo/logo.png')}}" style="width:100px" alt="" class="img-fluid"></a>
+
                         </div>
                         <div class="footer-contact">
                             <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart...</p>
@@ -31,14 +32,14 @@
                                 <button class="default-search-style-input-btn" type="submit">Subscribe</button>
                             </div>
                         </form>
-                        <p class="footer-widget-subscribe-note">We’ll never share your email address <br> with a third-party.</p>
-                        <ul class="footer-social">
+                        <p class="footer-widget-subscribe-note">We’ll never share your email address  with a third-party.</p>
+                        {{-- <ul class="footer-social">
                             <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
                             <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
                             <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
