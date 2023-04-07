@@ -166,78 +166,16 @@
     </div> --}}
     <div class="container">
     <ul data-testid="category-count-links" class="css-13y1qrz">
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/chevrolet" class="css-pyvavn">Chevrolet<span
-                    class="css-wz88">46&nbsp;212</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/audi" class="css-pyvavn">Audi<span
-                    class="css-wz88">92</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/baic" class="css-pyvavn">Baic<span
-                    class="css-wz88">6</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/bmw" class="css-pyvavn">BMW<span
-                    class="css-wz88">380</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/byd" class="css-pyvavn">BYD<span
-                    class="css-wz88">1&nbsp;602</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/daewoo" class="css-pyvavn">Daewoo<span
-                    class="css-wz88">3&nbsp;420</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/fiat" class="css-pyvavn">Fiat<span
-                    class="css-wz88">25</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/ford" class="css-pyvavn">Ford<span
-                    class="css-wz88">148</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/gac" class="css-pyvavn">GAC<span
-                    class="css-wz88">110</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/haval" class="css-pyvavn">Haval<span
-                    class="css-wz88">9</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/hyundai" class="css-pyvavn">Hyundai<span
-                    class="css-wz88">1&nbsp;512</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/isuzu" class="css-pyvavn">Isuzu<span
-                    class="css-wz88">28</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/jac" class="css-pyvavn">JAC<span
-                    class="css-wz88">278</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/kia" class="css-pyvavn">Kia<span
-                    class="css-wz88">2&nbsp;026</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/lexus" class="css-pyvavn">Lexus<span
-                    class="css-wz88">122</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/mazda" class="css-pyvavn">Mazda<span
-                    class="css-wz88">45</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/mercedes" class="css-pyvavn">Mercedes<span
-                    class="css-wz88">794</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/mitsubishi" class="css-pyvavn">Mitsubishi<span
-                    class="css-wz88">48</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/nio" class="css-pyvavn">Nio<span
-                    class="css-wz88">3</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/nissan" class="css-pyvavn">Nissan<span
-                    class="css-wz88">169</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/opel" class="css-pyvavn">Opel<span
-                    class="css-wz88">78</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/ora" class="css-pyvavn">ORA<span
-                    class="css-wz88">1</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/peugeot" class="css-pyvavn">Peugeot<span
-                    class="css-wz88">4</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/porsche" class="css-pyvavn">Porsche<span
-                    class="css-wz88">8</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/skoda" class="css-pyvavn">Skoda<span
-                    class="css-wz88">93</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/tesla" class="css-pyvavn">Tesla<span
-                    class="css-wz88">141</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/toyota" class="css-pyvavn">Toyota<span
-                    class="css-wz88">513</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/volkswagen" class="css-pyvavn">Volkswagen<span
-                    class="css-wz88">535</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/xpeng" class="css-pyvavn">Xpeng<span
-                    class="css-wz88">18</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/vaz" class="css-pyvavn">ВАЗ<span
-                    class="css-wz88">3&nbsp;754</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/gaz" class="css-pyvavn">ГАЗ<span
-                    class="css-wz88">841</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/zaz" class="css-pyvavn">ЗАЗ<span
-                    class="css-wz88">88</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/izh" class="css-pyvavn">ИЖ<span
-                    class="css-wz88">23</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/moskvich" class="css-pyvavn">Москвич<span
-                    class="css-wz88">331</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/uaz" class="css-pyvavn">УАЗ<span
-                    class="css-wz88">173</span></a></li>
-        <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/drugie" class="css-pyvavn">Другие<span
-                    class="css-wz88">1&nbsp;782</span></a></li>
+        @foreach ($brands as $brand)
+              <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/chevrolet" class="css-pyvavn">{{$brand->name}}<span
+                    class="css-wz88">{{ $brand->products_count }}</span></a></li>
+        @endforeach
+      
+     
+
+                    {{-- <li class="css-szrfjb"><a href="/d/transport/legkovye-avtomobili/chevrolet" class="css-pyvavn">Chevrolet<span
+                        class="css-wz88">46&nbsp;212</span></a></li> --}}
+         
     </ul>
 </div>
     <!-- End Catagory Wrapper -->

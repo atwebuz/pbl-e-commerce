@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
-        // ]);
+        // ]); 
 
-        Brand::factory(20)->create();
+        Brand::factory(15)->create();
         Product::factory(20)->create();
         Category::factory(20)->create();
 
