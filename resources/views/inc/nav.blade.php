@@ -15,12 +15,22 @@
                             <!-- Start Header Top Menu -->
                             <ul class="header-user-menu">
                                 <li class="has-user-dropdown">
-                                    <a href="#">English</a>
+                                    @switch(session()->get('locale') ?? 'uz')
+                                        @case('ru')
+                                            <a href="#">Russian</a>
+                                        @break      
+                                        @case('en')
+                                        <a href="#">English</a>
+                                        @break 
+                                        @case('uz')
+                                        <a href="#">Uzbek</a>
+                                @break                                       
+                                    @endswitch
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
-                                        <li><a href="/language/en"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
-                                        <li><a href="/language/ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
-                                        <li><a href="/language/uz"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
+                                        <li><a href="?lang=en"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
+                                        <li><a href="?lang=ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
+                                        <li><a href="?lang=uz"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">
