@@ -4,7 +4,7 @@ use App\Http\Controllers\FallbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ProductController;
-use App\Models\Brand;
+// use App\Models\Brand;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -19,15 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $brands = Brand::select(['name'])
-    ->withCount('products')
-    ->get();
-// dd($brands);
-    return view('pages.home', [
-        'brands' => $brands
-    ]);
-});
+Route::get('/', [HomeController::class, 'index']);
 
 
 Route::get('/registration', function () {
@@ -108,7 +100,7 @@ Route::delete('/products/{product}', [ProductController::class, 'destroy']);
 Route::get('/products/manage', [ProductController::class, 'manage']);
 
 // Single product
-Route::get('/products/{product}', [ProductController::class, 'show']);;
+Route::get('/products/{product}', [ProductController::class, 'show'])->name('product');
 
 // Show Register/Create Form
 // Route::get('/register', [UserController::class, 'create']);;
@@ -127,8 +119,8 @@ Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 
 
 // localization
-Route::get('/{locale?}', [LangController::class, 'index']);
+Route::get('/language/set/{locale?}', [LangController::class, 'index']);
 
-Route::get('language/{locale}', [LangController::class, 'show']);
+Route::get('/language/show/{locale}', [LangController::class, 'show']);
 // not found 404 page
 Route::fallback(FallbackController::class);

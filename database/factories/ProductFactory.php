@@ -26,6 +26,7 @@ class ProductFactory extends Factory
             'price' => $this->faker->numberBetween(1000, 10000) / 100,
             'discount' => $this->faker->boolean(),
             'yearof' => $this->faker->date(),
+            'created_at' => $this->faker->date(),
             'condition' => $this->faker->randomElement(['Excellent', 'Good', 'Normal', 'Poor']),
             'transmission' => $this->faker->randomElement(['Manual', 'Automatic', 'Electic', 'Other']),
             'color' => $this->faker->randomElement(['white', 'blue', 'black', 'gray']),

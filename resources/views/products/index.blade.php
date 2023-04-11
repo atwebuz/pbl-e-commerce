@@ -302,7 +302,8 @@
                         <li><a href="#">3</a></li>
                         <li><a href="#">Next</a></li>
                     </ul> --}}
-                    {{-- {{$product->links()}} --}}
+
+                    {{$products->links()}}
                 </div> 
                 <!-- End Pagination -->
             </div> <!-- End Shop Product Sorting Section  -->

@@ -11,6 +11,7 @@ class FallbackCOntroller extends Controller
      */
     public function __invoke(Request $request)
     {
+        //dd('blabla');
         return view('pages.fallback');
     }
 }
