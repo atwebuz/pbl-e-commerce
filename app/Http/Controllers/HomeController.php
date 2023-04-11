@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index () {
 
-        $products = Product::orderBy('created_at')->get();
+        $products = Product::orderByDesc('created_at')->get();
         $brands = Brand::select(['name'])
         ->withCount('products')
         ->get();

@@ -218,8 +218,7 @@
                                             alt="" class="product-default-img img-fluid">
                                         </a>
                                         <div class="product-action-icon-link">
-                                            @dump($product->id);
-                                            @dump($product->created_at->format('Y.m.d H:i'));
+                                            {{-- @dump($product->id); --}}
 
                                             <ul>
                                                 <li><a href="/wishlist"><i class="icon-heart"></i></a></li>
@@ -234,9 +233,12 @@
                                     </div>
                                     <div class="product-default-content">
                                         <h6 class="product-default-link"><a href="/product">{{$product->name}}</a></h6>
-                                        <span class="product-default-price"><del
+                                        <span class="product-default-price"> <b>Price: </b> <del
                                                 class="product-default-price-off">${{$product->stock}}.0</del> ${{$product->price}}</span>
+                                                
                                     </div>
+                                  <b class="">Created at:</b>  {{  $product->created_at->format('Y.m.d')}}
+
                                 </div> <!-- End Product Defautlt Single -->
                                 @endforeach    
                               

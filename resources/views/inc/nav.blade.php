@@ -17,20 +17,24 @@
                                 <li class="has-user-dropdown">
                                     @switch(session()->get('locale') ?? 'uz')
                                         @case('ru')
-                                            <a href="#">Russian</a>
+                                            <a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a>
                                         @break      
                                         @case('en')
-                                        <a href="#">English</a>
+                                        <a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a>
                                         @break 
                                         @case('uz')
-                                        <a href="#">Uzbek</a>
-                                @break                                       
+                                        <a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a>
+                                       @break  
+                                       @case('tu')
+                                       <a href="#"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-tu.png" alt=""> Turkish</a>
+                                      @break                                       
                                     @endswitch
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
                                         <li><a href="?lang=en"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
                                         <li><a href="?lang=ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
                                         <li><a href="?lang=uz"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
+                                        <li><a href="?lang=tu"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-tu.png" alt=""> Turkish</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">

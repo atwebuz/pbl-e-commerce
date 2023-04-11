@@ -33,7 +33,7 @@ class Localization
    {
         
         if($request->has('lang')){
-            if(in_array($request->lang, ['uz', 'ru', 'en'])){
+            if(in_array($request->lang, ['uz', 'ru', 'en','tu'])){
                 $locale = $request->lang;
                 session()->put('locale', $locale);
                 app()->setLocale($locale);
