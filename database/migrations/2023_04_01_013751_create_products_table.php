@@ -21,21 +21,26 @@ return new class extends Migration
              $table->text('description');
              $table->decimal('price', 10, 2);
              $table->boolean('discount')->default('false');
-             $table->date('yearof');
-             $table->float('millage');
-             $table->string('condition');
-             $table->string('color');
-             $table->string('oil');
+             $table->string('model')->nullable();
              $table->string('body_type');
+             $table->date('date_of_year');
+             $table->float('millage');
              $table->string('transmission');
+             $table->string('color');
+             $table->string('oil_type');
+             $table->string('condition');
+             $table->string('address');
+             $table->string('user_name');
+             $table->string('user_number');
              $table->string('image')->nullable();
              $table->string('images')->nullable();
-             $table->integer('quantity')->default(0);
+             $table->integer('quantity')->default(1);
              $table->integer('stock')->unsigned()->default(0); 
              $table->unsignedBigInteger('brands_id')->nullable();
              $table->foreign('brands_id')->references('id')->on('brands');
-             $table->unsignedBigInteger('category_id')->nullable();
-             $table->foreign('category_id')->references('id')->on('categories');  
+            //  $table->unsignedBigInteger('categories_id');
+            //  $table->foreign('categories_id')->references('id')->on('categories');
+
              $table->timestamps();
         }); 
     } 

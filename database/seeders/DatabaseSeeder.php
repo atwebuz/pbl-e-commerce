@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
 
         Brand::factory(15)->create();
         Product::factory(20)->create();
-        Category::factory(20)->create();
+        // Category::factory(2)->create();
 
       
 

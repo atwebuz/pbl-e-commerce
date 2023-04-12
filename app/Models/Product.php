@@ -10,20 +10,23 @@ class Product extends Model
     use HasFactory;
 
    
-    // protected $fillable = ['name', 
-    //                        'description',
-    //                        'price',
-    //                        'dagavornaya',
-    //                        'model',
-    //                        'kuzov',
-    //                        'prabeg',
-    //                        'karobka',
-    //                        'color',
-    //                        'oil',
-    //                        'xolati',
-    //                        'address',
-    //                        'user_name',
-    //                        'number'];
+    protected $fillable = ['name', 
+                           'description',
+                           'price',
+                           'model',
+                           'body_type',
+                           'date_of_year',
+                           'millage',
+                           'transmission',
+                           'color',
+                           'oil_type',
+                           'condition',
+                           'address',
+                           'user_name',
+                           'user_number'];
+
+                         
+               
 
     public function scopeFilter($query, array $filters) {
         if($filters['tag'] ?? false) {

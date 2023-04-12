@@ -33,33 +33,32 @@ class ProductController extends Controller
 
     // Store product Data
     public function store(Request $request) {
-        dd($request);
+        //dd($request);
         $formFields = $request->validate([
             'name' => 'required',
-            'description' => ['required', Rule::unique('products', 'company')],
+            'description' => 'required',
             'price' => 'required',
-            'dagavornaya' => 'required',
-            'model' => ['required', 'email'],
-            'kuzov' => 'required',
-            'prabeg' => 'required',
-            'karobka' => 'required',
-            'color' => ['required', Rule::unique('products', 'company')],
-            'oil' => 'required',
-            'xolati' => 'required',
-            'address' => ['required', 'email'],
+            'model' => 'required',
+            'body_type' => 'required',
+            'date_of_year' => 'required',
+            'millage' => 'required',
+            'transmission' => 'required',
+            'color' => 'required',
+            'oil_type' => 'required',
+            'condition' => 'required',
+            'address' => 'required',
             'user_name' => 'required',
-            'number' => 'required'
+            'user_number' => 'required',
         ]);
 
-        if($request->hasFile('logo')) {
-            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
-        }
+        // if($request->hasFile('logo')) {
+        //     $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        // }
 
-        $formFields['user_id'] = auth()->id();
 
         Product::create($formFields);
 
-        return redirect('/')->with('message', 'product created successfully!');
+        return redirect()->route('products')->with('message', 'product created successfully!');
     }
 
     // Show Edit Form

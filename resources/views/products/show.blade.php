@@ -75,11 +75,18 @@
                             <h4 class="title">Available Options</h4>
                             <!-- Product Variable Single Item -->
                             <ul class="my-3 d-flex justify-content-between">
-                                <li> <b>Oil: {{$product->oil}}</b></li>
+                                <li> <b>Oil: {{$product->oil_type}}</b></li>
                                 <li> <b>Color: {{$product->color}}</b></li>
                                 <li> <b>Condition: {{$product->condition}}</b></li>
                                 <li> <b>Body_type: {{$product->body_type}}</b></li>
-                                <li> <b>Transmission: {{$product->transmission}}</b></li>
+                                <li> <b>Transmission: {{$product->transmission}}</b></li> <br>
+                            </ul>
+                            <ul class="my-3 d-flex justify-content-between">
+                             
+                                <li> <b>Date: {{$product->date_of_year}}</b></li>
+                                <li> <b>Date: {{$product->millage}}</b></li>
+                                <li> <b>Username: {{$product->user_name}}</b></li>
+                                <li> <b>Username: {{$product->user_number}}</b></li>
                             </ul>
                         
 

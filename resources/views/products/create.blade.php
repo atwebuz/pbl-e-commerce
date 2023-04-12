@@ -10,9 +10,9 @@
         <h3>Describe in detail</h3>
             <div class="mb-3 col-12">
                 <label for="">Please enter a title*</label>
-                <input type="tel" class="form-control p-3" id="exampleInputEmail1" name="name">
+                <input type="tel" class="form-control p-3" id="exampleInputEmail1" name="name" value="{{old('name')}}">
 
-                @error('tel')
+                @error('name')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
             </div>
@@ -35,7 +35,7 @@
               <div class="mb-3 col-12">
                 <label for="">Description</label>
                 <div class="form-floating">
-                    <textarea class="form-control p-3" name="description"  comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control p-3" name="description"  comment here" id="floatingTextarea2" style="height: 100px"  value="{{old('description')}}"></textarea>
                 </div>  
                 @error('description')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -44,7 +44,7 @@
                     
               <div class="mb-3 col-6">
                 <label for="">Price* </label>
-                  <input type="number" name="price" class="form-control p-3" id="exampleInputEmail1" name="price" ">
+                  <input type="number" name="price" class="form-control p-3" id="exampleInputEmail1" name="price" value="{{old('price')}}">
 
                   @error('price')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -53,24 +53,20 @@
           
               <div class="mb-3 col-12">
                 <div class="form-check form-switch">
-                    <input name="discount" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <input name="discount" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" >
                     <label class="form-check-label" for="flexSwitchCheckDefault">Discount</label>
-
-
                   </div>
-                </div>
+              </div>
           
               <div class="mb-3 col-6">
                 <label for="">Model*</label>
-                <input type="text" class="form-control" name="model" id="">
-                  @error('model')
-                  <p class="text-red-500 text-xs mt-1">{{$message}}</p>
-                  @enderror    
+                <input type="text" class="form-control" name="model" id="" value="{{old('model')}}">
+                
                </div>
 
                <div class="mb-3 col-6">
                 <label for="">Body type**</label>
-                <select class="form-select " name="body_type" aria-label="Default select example">
+                <select class="form-select " name="body_type" aria-label="Default select example"  value="{{old('body_type')}}">
                     <option selected value="Sedan">Sedan</option>
                     <option value="Coupe">Coupe</option>
                     <option value="Hatchback">Hatchback</option>
@@ -90,34 +86,34 @@
           
                <div class="mb-3 col-6">
                 <label for="">Year of issue**</label>
-                    <input type="month" class="form-control p-3" name="date_of_year"  id="">
+                    <input type="month" class="form-control p-3" name="date_of_year"  value="{{old('date_of_year')}}"  id="">
                     @error('date_of_year')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                     @enderror    
                </div>
                <div class="mb-3 col-6">
                 <label for="">Mileage*</label>
-                    <input type="text" class="form-control p-3" name="prabeg"  id="">
-                    @error('prabeg')
+                    <input type="text" class="form-control p-3" name="millage"  id="">
+                    @error('millage')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                     @enderror    
                </div>
 
                <div class="mb-3 col-6">
                 <label for="">Transmission*</label>
-                <select class="form-select " name="karobka" aria-label="Default select example">
+                <select class="form-select " name="transmission" aria-label="Default select example"  value="{{old('transmission')}}">
                     <option selected value="Manual">Manual</option>
                     <option value="Automatic">Automatic</option>
                     <option value="Electirc">Electirc</option>
                     <option value="Other">Other</option>
                   </select>
-                  @error('Transmission')
+                  @error('transmission')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                   @enderror    
                </div>
                <div class="mb-3 col-6">
                  <label for="">Color*</label>
-                 <input type="text" class="form-control p-3" name="color"  id="">
+                 <input type="text" class="form-control p-3" name="color"  value="{{old('color')}}"  id="">
 
                   @error('color')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -125,7 +121,7 @@
                </div>
                <div class="mb-3 col-6">
                 <label for="">Oil Type*</label>
-                <select class="form-select " name="oil" aria-label="Default select example">
+                <select class="form-select " name="oil_type" aria-label="Default select example"  value="{{old('oil_type')}}">
                     <option selected value="gasoline">gasoline</option>
                     <option value="gas">gas</option>
                     <option value="methane">methane</option>
@@ -139,19 +135,19 @@
 
                <div class="mb-3 col-6">
                 <label for="">Car condition</label>
-                <select class="form-select " name="xolati" aria-label="Default select example">
+                <select class="form-select " name="condition" aria-label="Default select example"  value="{{old('condition')}}">
                     <option selected value="Excellent">Excellent</option>
                     <option selected value="Good">Good</option>
                     <option value="Normal">Normal</option>
                     <option value="Poor">Poor</option>
                   </select>
-                  @error('Condition')
+                  @error('condition')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                   @enderror    
                </div>
                <div class="mb-3 col-12">
                 <label for="">Address</label>
-                <input type="text" class="form-control p-3" id="exampleInputPassword1" name="address" ">
+                <input type="text" class="form-control p-3" id="exampleInputPassword1" name="address"  value="{{old('address')}}">
                 @error('address')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror    
@@ -160,8 +156,8 @@
                <hr>
                <div class="mb-3 col-6">
                 <label for="">Contact person*</label>
-                <input type="text" class="form-control p-3" id="exampleInputPassword1" name="user_name" ">
-                @error('name')
+                <input type="text" class="form-control p-3" id="exampleInputPassword1" name="user_name"  value="{{old('user_name')}}">
+                @error('user_name')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror    
               </div>
@@ -169,8 +165,8 @@
               <div class="mb-3 col-6">
                 <label for="">Phone Number</label>
 
-                  <input type="tel" class="form-control p-3" id="exampleInputPassword1" name="number" ">
-                  @error('number')
+                  <input type="tel" class="form-control p-3" id="exampleInputPassword1" name="user_number"  value="{{old('user_number')}}">
+                  @error('user_number')
                   <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                   @enderror  
                 </div>
