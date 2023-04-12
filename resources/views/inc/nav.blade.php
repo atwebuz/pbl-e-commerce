@@ -31,10 +31,10 @@
                                     @endswitch
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
-                                        <li><a href="?lang=en"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
-                                        <li><a href="?lang=ru"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
-                                        <li><a href="?lang=uz"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
-                                        <li><a href="?lang=tu"><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-tu.png" alt=""> Turkish</a></li>
+                                        <li><a href="?lang=en" ><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
+                                        <li><a href="?lang=ru" ><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-ru.png" alt=""> Russian</a></li>
+                                        <li><a href="?lang=uz" ><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-uz.png" alt=""> Uzbek</a></li>
+                                        <li><a href="?lang=tu" ><img class="user-sub-menu-link-icon" src="assets/images/icon/lang-tu.png" alt=""> Turkish</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">
