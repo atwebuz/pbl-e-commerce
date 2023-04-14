@@ -13,10 +13,12 @@ class HomeController extends Controller
 
         $categories = Category::all();
         
-        $products = Product::orderByDesc('created_at')->get();
+
+        $products = Product::with('category', 'brand')->orderByDesc('created_at')->get();
         $brands = Brand::select(['name'])
         ->withCount('products')
         ->get();
+        // dd($products);
     // dd($brands);
         return view('pages.home', compact(['brands', 'products','categories']));
      

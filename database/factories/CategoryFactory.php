@@ -16,8 +16,9 @@ class CategoryFactory extends Factory
      */
     public function definition(): array
     {
-        // return [
-        //     'name' => $this->faker->unique()->randomElement(['Moto', 'Kamaz'])
-        // ];
+        return [
+            'name' => $this->faker->unique()->randomElement(['Moto', 'Kamaz','Car'])
+        ];
     }
 }
+ 

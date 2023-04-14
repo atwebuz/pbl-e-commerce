@@ -38,12 +38,12 @@ return new class extends Migration
              $table->integer('stock')->unsigned()->default(0); 
              $table->unsignedBigInteger('brands_id')->nullable();
              $table->foreign('brands_id')->references('id')->on('brands');
-            //  $table->unsignedBigInteger('categories_id');
-            //  $table->foreign('categories_id')->references('id')->on('categories');
+             $table->unsignedBigInteger('categories_id');
+             $table->foreign('categories_id')->references('id')->on('categories');
 
              $table->timestamps();
         }); 
-    } 
+    }  
 
     /**
      * Reverse the migrations.
