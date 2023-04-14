@@ -22,6 +22,7 @@ return new class extends Migration
              $table->decimal('price', 10, 2);
              $table->boolean('discount')->default('false');
              $table->string('model')->nullable();
+            //  $table->string('category')->nullable();
              $table->string('body_type');
              $table->date('date_of_year');
              $table->float('millage');

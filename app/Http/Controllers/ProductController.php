@@ -33,12 +33,13 @@ class ProductController extends Controller
 
     // Store product Data
     public function store(Request $request) {
-        //dd($request);
+        // dd($request);
         $formFields = $request->validate([
             'name' => 'required',
             'description' => 'required',
             'price' => 'required',
             'model' => 'required',
+            'categories_id' => 'required',
             'body_type' => 'required',
             'date_of_year' => 'required',
             'millage' => 'required',

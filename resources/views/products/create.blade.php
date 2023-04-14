@@ -57,6 +57,22 @@
                     <label class="form-check-label" for="flexSwitchCheckDefault">Discount</label>
                   </div>
               </div>
+
+              <div class="mb-3 col-12">
+                <label for="">Choose Category</label>
+                <select class="form-select " name="categories_id" aria-label="Default select example"  value="{{old('body_type')}}">
+                    <option selected value="3">Car</option>
+                    <option value="1">Moto</option>
+                    <option value="2">Kamaz</option>
+                   
+                  </select>
+
+
+                  @error('body_type')
+                  <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                  @enderror    
+               </div>
+          
           
               <div class="mb-3 col-6">
                 <label for="">Model*</label>

@@ -14,6 +14,7 @@ class Product extends Model
                            'description',
                            'price',
                            'model',
+                           'categories_id',
                            'body_type',
                            'date_of_year',
                            'millage',
