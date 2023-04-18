@@ -17,12 +17,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('number');
-            $table->string('address');
-            $table->boolean('is_admin');
-            $table->boolean('is_published');
-            $table->boolean('is_banned');
-            $table->string('about_me');
+            $table->tinyInteger('type')->default(0);
+            /* Users: 0=>User, 1=>Admin, 2=>Manager */
             $table->rememberToken();
             $table->timestamps();
         });

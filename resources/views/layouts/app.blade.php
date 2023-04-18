@@ -1,95 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
- <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aments - Car Accessories Shop HTML Template</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+       <!-- ::::::::::::::Favicon icon::::::::::::::-->
+       <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
 
-    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
-    <!-- Vendor CSS -->
-    <!-- <link rel="stylesheet" href="{{asset('assets/css/vendor/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/plaza-icon.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/jquery-ui.min.css')}}"> -->
-
-    <!-- Plugin CSS -->
-    <!-- <link rel="stylesheet" href="{{asset('assets/css/plugins/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/aos.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/nice-select.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/venobox.min.css')}}"> -->
-
-    <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"> -->
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/vendor.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/plugins.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/root.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/extra.css')}}">
-
-
-
-
-</head>
-
-<body>
-    <!-- ...::::  Header menu start ... -->
-
-    @include('inc.nav')
-
-    <!-- ...::::  Header menu End ... -->
-
-
-    <div class="offcanvas-overlay"></div>
-
-    <!-- ...:::: Start Hero Area Section:::... -->
-    
+  
    
-    @yield('content_header')
+       <!-- Main CSS -->
+       <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"> 
+   
+       <link rel="stylesheet" href="{{asset('assets/css/vendor/vendor.min.css')}}">
+       <link rel="stylesheet" href="{{asset('assets/css/plugins/plugins.min.css')}}">
+       <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
+       <link rel="stylesheet" href="{{asset('assets/css/root.css')}}">
+       <link rel="stylesheet" href="{{asset('assets/css/extra.css')}}">
+
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+</head>
+<body>
+    <div id="app">
+
+     @include('inc.nav')
+
+   
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav> --}}
+
+        @yield('content_header')
        
-     <!-- ...:::: End Hero Area Section:::... -->
+        <!-- ...:::: End Hero Area Section:::... -->
+   
+        <!-- ...:::: Start Product Catagory Section:::... -->
+        @yield('content_section')
+       <!-- ...:::: Start Company Logo Section:::... -->
+   
+        <!-- ...:::: End Blog Feed Section:::... -->
+   
+       <!-- ...:::: Start Footer Section:::... -->
+     @include('inc.footer')
+       <!-- End Modal Quickview cart -->
 
-     <!-- ...:::: Start Product Catagory Section:::... -->
-     @yield('content_section')
-    <!-- ...:::: Start Company Logo Section:::... -->
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
 
-     <!-- ...:::: End Blog Feed Section:::... -->
-
-    <!-- ...:::: Start Footer Section:::... -->
-        @include('inc.footer')
-    <!-- End Modal Quickview cart -->
-
-    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
-    <!-- Global Vendor, plugins JS -->
-    <!-- <script src="{{asset('assets/js/vendor/modernizr-3.11.2.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendor/jquery-migrate-3.3.2.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendor/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendor/jquery-ui.min.js')}}"></script> -->
-
-    <!--Plugins JS-->
-    <!-- <script src="{{asset('assets/js/plugins/slick.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/material-scrolltop.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/jquery.nice-select.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/jquery.zoom.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/venobox.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/aos.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/ajax-mail.js')}}"></script> -->
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+  
+    {{-- <script src="{{asset('assets/js/vendor.min.js')}}"></script> --}}
     <script src="{{asset('assets/js/plugins.min.js')}}"></script>
-
-    <!-- Main JS -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
-
+    <script src="{{asset('assets/js/main.js')}}"></script> 
+    
 </body>
-
-
 </html>

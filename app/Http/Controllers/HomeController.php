@@ -1,27 +1,49 @@
 <?php
-
+  
 namespace App\Http\Controllers;
-
-use App\Models\Brand;
-use App\Models\Category;
-use App\Models\Product;
+ 
 use Illuminate\Http\Request;
-
+use Illuminate\View\View;
+  
 class HomeController extends Controller
 {
-    public function index () {
-
-        $categories = Category::all();
-        
-
-        $products = Product::with('category', 'brand')->orderByDesc('created_at')->get();
-        $brands = Brand::select(['name'])
-        ->withCount('products')
-        ->get();
-        // dd($products);
-    // dd($brands);
-        return view('pages.home', compact(['brands', 'products','categories']));
-     
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+  
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index(): View
+    {
+        return view('home');
+    } 
+  
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function adminHome(): View
+    {
+        return view('adminHome');
+    }
+  
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function managerHome(): View
+    {
+        return view('managerHome');
     }
 }
-

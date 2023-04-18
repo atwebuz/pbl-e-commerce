@@ -38,15 +38,56 @@
                                     </ul>
                                 </li>
                                 <li class="has-user-dropdown">
-                                    <a href="#">Setting </a>
+                                    <a href="#">  
+                                       
+                                         @if (Auth::user()) 
+                                              {{ Auth::user()->name }}
+                                        @else
+                                        Authtentication
+
+                                        @endif   
+                                     
+
+                                     </a>
                                     <!-- Header Top Menu's Dropdown -->
                                     <ul class="user-sub-menu">
-                                        <li><a href="/checkout">Checkout</a></li>
-                                        <li><a href="/profile">My Account</a></li>
-                                        <li><a href="/cart">Shopping Cart</a></li>
-                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        <!-- Authentication Links -->
+                                        @guest
+                                            @if (Route::has('login'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                </li>
+                                            @endif
+                
+                                            @if (Route::has('register'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                                </li>
+                                            @endif
+                                        @else
+                                            <li class="nav-item dropdown">
+                                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                    {{ Auth::user()->name }}
+                                                </a>
+                
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                                       onclick="event.preventDefault();
+                                                                     document.getElementById('logout-form').submit();">
+                                                        {{ __('Logout') }}
+                                                    </a>
+                
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        @endguest
                                     </ul>
                                 </li>
+
+                             
+                                
                               
                             </ul> <!-- End Header Top Menu -->
                         </div>
@@ -250,7 +291,7 @@
                                         <li><a href="/cart">Cart</a></li>
                                         <li><a href="/wishlist">Wishlist</a></li>
                                         <li><a href="/checkout">Checkout</a></li>
-                                        <li><a href="//">Login</a></li>
+                                        <li><a href="/">Login</a></li>
                                         <li><a href="/profile">My Account</a></li>
                                     </ul>
                                 </li>
