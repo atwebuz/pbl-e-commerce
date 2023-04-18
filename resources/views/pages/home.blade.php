@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-10 col-md-8 col-xl-6">
-                            <h5>World Best Quality</h5>
+                            <h5>World ZZZ Best Quality</h5>
                             <h2>New Car Parts</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiu</p>
                             <a href="/product" class="hero-button">Shopping Now</a>
